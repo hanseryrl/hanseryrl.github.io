@@ -1,0 +1,184 @@
+.text-justify {
+    text-align: justify;
+}
+
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.carousel-item img {
+    height: 40%;
+}
+
+#cienciaDeDatos img {
+    width: 100%;
+    min-width: 400px;
+}
+
+#herramientas img {
+    width: 200px;
+    height: 200px;
+}
+
+.accordion-button:focus {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button:not(.focus) {
+    background-color: transparent;
+    color: inherit;
+    box-shadow: none; 
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .navbar {
+    background-color: #2c2c2c !important;
+}
+
+.dark-mode .nav-link {
+    color: #ffffff !important;
+}
+
+.dark-mode .nav-link:hover {
+    color: #cccccc !important;
+}
+
+.dark-mode .card {
+    background-color: #2c2c2c;
+    color: #ffffff !important;
+    border: none;
+}
+
+.dark-mode .card-title,
+.dark-mode .card-text {
+    color: #ffffff !important;
+}
+
+.dark-mode .text-muted {
+    color: #aaaaaa !important;
+}
+
+.dark-mode .list-group-item {
+    background-color: #2c2c2c !important;
+    color: #ffffff !important;
+    border-color: #444444 !important;
+}
+
+.dark-mode footer {
+    background-color: #0f0f0f !important;
+    color: #ffffff !important;
+}
+
+.dark-mode #modoOscuro i {
+    color: #ffd700;
+}
+
+.dark-mode a {
+    color: #ffffff !important;
+}
+
+.dark-mode a:hover {
+    color: #cccccc !important;
+}
+
+.dark-mode .btn {
+    color: #ffffff !important;
+}
+
+.dark-mode #modoOscuro {
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .accordion-item {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-color: #495057;
+}
+
+body.dark-mode .accordion-button {
+    background-color: #495057;
+    color: #f8f9fa;
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #6c757d;
+    color: #f8f9fa;
+}
+
+body.dark-mode .accordion-body {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode .table {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #495057;
+}
+
+body.dark-mode .table-bordered {
+    border-color: #495057;
+}
+
+body.dark-mode .table tbody td {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode .modal-content {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode .modal-header.bg-dark {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+body.dark-mode .modal-body {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode .modal-footer {
+    background-color: #343a40;
+    border-color: #495057;
+}
+
+body.dark-mode .modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+body.dark-mode #contactForm {
+    background-color: #2c2c2c !important;
+}
+
+body.dark-mode #contactForm input,
+body.dark-mode #contactForm textarea {
+    background-color: #697077 !important;
+    border: 1px solid black;
+}
+
+body.dark-mode #enviarMensaje {
+    background-color: #444444;
+    border: none;
+}

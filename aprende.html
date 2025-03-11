@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Datatist: Explora recursos, artículos y herramientas sobre ciencia de datos">
+    <meta name="keywords" content="ciencia de datos, machine learning, Datatist, análisis de datos, Python, estadística, big data">
+    <meta name="author" content="Hanser Gregorio De Leon">
+    <title>Conceptos - Datatist</title>
+    <link rel="icon" type="image/x-icon" href="media/datatist.ico"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="media/datatist.png" alt="Datatist" width="150px">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto pt-sans-regular">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="aprende.html">Aprende</a></li>
+                    <li class="nav-item"><a class="nav-link" href="articulos.html">Artículos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item">
+                        <button id="modoOscuro" class="btn btn-outline-dark mx-2">
+                            <i class="bi bi-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Titulo principal -->
+    <h1 class="display-5 text-center pt-4 pt-sans-bold">Conoce la Ciencia de datos</h1>
+    
+    <!-- Historia -->
+    <div id="historia" class="container pb-3">        
+        <h2 class="text-center mt-5 pt-sans-bold">Historia de la Ciencia de Datos</h2>
+        <div class="row">
+            <div class="col-lg-4 mb-3">
+                <h5 class="pt-sans-bold text-center">Sus inicios</h5>
+                <p class="lead pt-sans-regular fs-5 p-4 shadow rounded text-justify bg-primary text-white">
+                    La ciencia de datos tiene sus raíces en la estadística y las matemáticas, pero como campo independiente comenzó en el siglo XX, con la llegada de las computadoras y la necesidad de analizar grandes datos. En los años 60 y 70, términos como "análisis de datos" ganaron relevancia, y se desarrollaron técnicas estadísticas avanzadas que sentaron las bases de la ciencia de datos.
+                </p>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <h5 class="pt-sans-bold text-center mt-md-3">Años 90</h5>
+                <p class="lead pt-sans-regular fs-5 p-4 shadow rounded text-justify bg-secondary text-white">
+                    En los años 90, con el crecimiento de Internet y la digitalización, la cantidad de datos aumentó rápidamente, lo que impulsó herramientas como Hadoop y bases de datos NoSQL. Además, el avance de la inteligencia artificial y el machine learning permitió a las máquinas aprender y realizar tareas complejas, como el reconocimiento de imágenes, popularizando el término "ciencia de datos".
+                </p>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <h5 class="pt-sans-bold text-center">Última decada</h5>
+                <p class="lead pt-sans-regular fs-5 p-4 shadow rounded text-justify bg-danger text-white">
+                    En la última década, la ciencia de datos creció impulsada por la digitalización, herramientas como Python y TensorFlow, y la creciente demanda de profesionales en análisis de datos. Hoy, es fundamental en sectores como la medicina, finanzas, marketing y tecnología, y sigue expandiéndose en un mundo cada vez más interconectado.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Infografía -->
+    <div id="infografia" class="container my-5">
+        <h2 class="text-center pt-sans-bold mb-4">Infografía: La ciencia de LOS GRANDES DATOS</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="media/infografia-izq.jpg" class="img-fluid rounded-start shadow-sm" alt="Mitad izquierda de la infografía">
+            </div>
+            <div class="col-md-6">
+                <img src="media/infografia-der.jpg" class="img-fluid rounded-end shadow-sm" alt="Mitad derecha de la infografía">
+            </div>
+        </div>
+    </div>
+
+    <!-- Conceptos clave -->
+    <div id="conceptos" class="container pt-4">
+        <h2 class="text-center pt-sans-bold">Conceptos clave en Ciencia de datos</h2>
+        <div class="accordion pt-sans-regular" id="conceptosAcordeon">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Datos
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#conceptosAcordeon">
+                    <div class="accordion-body">
+                        Los datos son hechos o estadísticas recopiladas que pueden ser analizadas. Pueden ser números, texto, imágenes, etc.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Big Data
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#conceptosAcordeon">
+                    <div class="accordion-body">
+                        Big Data se refiere a conjuntos de datos extremadamente grandes y complejos que requieren herramientas especiales para ser procesados y analizados.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Machine learning
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#conceptosAcordeon">
+                    <div class="accordion-body">
+                        Es una rama de la inteligencia artificial donde las máquinas aprenden de los datos para hacer predicciones o tomar decisiones sin ser programadas explícitamente.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        IA generativa
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#conceptosAcordeon">
+                    <div class="accordion-body">
+                        Tipo de inteligencia artificial que genera nuevos datos o contenido, como imágenes, texto o música, basándose en patrones aprendidos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Regresión
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#conceptosAcordeon">
+                    <div class="accordion-body">
+                        Técnica de análisis de datos usada para predecir valores numéricos, como la predicción de precios o resultados.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFifteen">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                        Modelos predictivos
+                    </button>
+                </h2>
+                <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#conceptosAcordeon">
+                    <div class="accordion-body">
+                        Modelos matemáticos que, basándose en datos históricos, puedan predecir resultados futuros.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabla de herramientas -->
+    <div id="tabHerramientas" class="container py-5">
+        <h2 class="pt-sans-bold text-center">Comparando las herramientas de Ciencia de datos</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center pt-sans-regular">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Herramienta</th>
+                        <th>Lenguaje/Plataforma</th>
+                        <th>Propósito</th>
+                        <th>Facilidad de uso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>Lenguaje de programación</td>
+                        <td>Machine learning, análisis de datos</td>
+                        <td>Fácil</td>
+                    </tr>
+                    <tr>
+                        <td>R</td>
+                        <td>Lenguaje de programación</td>
+                        <td>Estadística, visualización de datos</td>
+                        <td>Media</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Lenguaje de consulta</td>
+                        <td>Bases de datos, consultas</td>
+                        <td>Fácil</td>
+                    </tr>
+                    <tr>
+                        <td>Power BI</td>
+                        <td>Software</td>
+                        <td>Business intelligence, visualización</td>
+                        <td>Fácil</td>
+                    </tr>
+                    <tr>
+                        <td>Tableau</td>
+                        <td>Software</td>
+                        <td>Visualización de datos interactiva</td>
+                        <td>Fácil</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>        
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <a href="https://web.facebook.com/" target="_blank" class="text-white mx-2 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/" target="_blank" class="text-white mx-2 fs-4"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="text-white mx-2 fs-4"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <p class="mb-0">© 2024 Datatist. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-secondary text-white pt-sans-regular px-3" data-bs-toggle="modal" data-bs-target="#modalPolitica">Política de privacidad</button>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalPolitica" tabindex="-1" aria-labelledby="modalPoliticaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title pt-sans-bold" id="modalPoliticaLabel">Política de privacidad</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body pt-sans-regular">
+                    <p>Tu privacidad es importante para nosotros. En Datatist, nos comprometemos a proteger tu información personal y garantizar la seguridad de tus datos.</p>
+                    <h6>1. Recopilación de datos</h6>
+                    <p>Recopilamos información como nombre y correo electrónico cuando utilizas nuestros servicios.</p>
+                    <h6>2. Uso de la información</h6>
+                    <p>Usamos tus datos para mejorar la experiencia del usuario y ofrecer contenido relevante.</p>
+                    <h6>3. Seguridad</h6>
+                    <p>Implementamos medidas de seguridad para proteger tu información contra accesos no autorizados.</p>
+                    <p class="text-muted"><small>Última actualización: marzo 2025</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Datatist: Explora recursos, artículos y herramientas sobre ciencia de datos">
+    <meta name="keywords" content="ciencia de datos, machine learning, Datatist, análisis de datos, Python, estadística, big data">
+    <meta name="author" content="Hanser Gregorio De Leon">
+    <title>Contacto - Datatist</title>
+    <link rel="icon" type="image/x-icon" href="media/datatist.ico"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="media/datatist.png" alt="Datatist" width="150px">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aprende.html">Aprende</a></li>
+                    <li class="nav-item"><a class="nav-link" href="articulos.html">Artículos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item">
+                        <button id="modoOscuro" class="btn btn-outline-dark mx-2">
+                            <i class="bi bi-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor de alertas -->
+    <div id="alertContainer" class="container mt-4"></div>
+
+    <!-- Contacto -->
+    <div id="contacto" class="container my-5">
+        <h1 class="display-5 text-center pt-sans-bold mb-4">Contáctanos</h1>
+        <p class="text-center pt-sans-regular lead mb-5">¿Tienes dudas o sugerencias? Envíanos un mensaje y te responderemos lo antes posible</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <form id="contactForm" class="shadow p-4 rounded bg-white" onsubmit="event.preventDefault(); enviarFormulario();"> <!-- OJO AQUI -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label pt-sans-regular">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                        <div class="invalid-feedback">Por favor, ingresa tu nombre</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label pt-sans-regular">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+                        <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label pt-sans-regular">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                        <div class="invalid-feedback">Por favor, escribe tu mensaje</div>
+                    </div>
+                    <button type="submit" id="enviarMensaje" class="btn btn-primary pt-sans-regular w-100">
+                        <span id="spinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                        <span id="buttonText">Enviar mensaje</span>
+                    </button>
+                </form>
+                <div class="text-center mt-4">
+                    <a href="mailto:contacto@datatist.com" class="btn btn-outline-secondary pt-sans-regular">
+                        <i class="bi bi-envelope me-2"></i>Enviar correo directamente
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preguntas frecuentes y mapa -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h4 class="pt-sans-bold mb-3 text-center text-md-start">Preguntas frecuentes</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item pt-sans-regular">
+                        <h6 class="pt-sans-bold">¿Qué es Datatist?</h6>
+                        <p class="mb-0">Datatist es una plataforma dedicada al aprendizaje de la ciencia de datos. Aquí encontrarás recursos, artículos y herramientas para explorar temas como machine learning, estadística y big data.</p>
+                    </li>
+                    <li class="list-group-item pt-sans-regular">
+                        <h6 class="pt-sans-bold">¿Ofrecen cursos?</h6>
+                        <p class="mb-0">No, actualmente no ofrecemos cursos estructurados en Datatist. Nos enfocamos en proporcionar contenido gratuito y accesible, como guías, tutoriales y artículos en nuestra sección "Aprende".</p>
+                    </li>
+                    <li class="list-group-item pt-sans-regular">
+                        <h6 class="pt-sans-bold">¿Cómo puedo colaborar?</h6>
+                        <p class="mb-0">Puedes colaborar enviándonos propuestas de artículos, compartiendo ideas para contenido o participando en proyectos conjuntos.</p>
+                    </li>
+                    <li class="list-group-item pt-sans-regular">
+                        <h6 class="pt-sans-bold">¿Qué herramientas recomiendan?</h6>
+                        <p class="mb-0">Depende de tu objetivo, pero algunas favoritas incluyen Python para análisis y machine learning, R para estadísticas avanzadas, SQL para bases de datos, y herramientas de visualización como Power BI o Tableau.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h4 class="pt-sans-bold mb-3 text-center text-md-start">Encuéntranos</h4>
+                <div class="ratio ratio-4x3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12239.552254363125!2d-69.93608924999999!3d18.4749533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf9f6be9a67c65%3A0xfedecbbf43e68d62!2sSanto%20Domingo!5e0!3m2!1ses-419!2sdo!4v1676316877124!5m2!1ses-419!2sdo" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <p class="pt-sans-regular text-md-start">Santo Domingo, República Dominicana</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <a href="https://web.facebook.com/" target="_blank" class="text-white mx-2 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/" target="_blank" class="text-white mx-2 fs-4"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="text-white mx-2 fs-4"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <p class="mb-0">© 2024 Datatist. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-secondary text-white pt-sans-regular px-3" data-bs-toggle="modal" data-bs-target="#modalPolitica">Política de privacidad</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalPolitica" tabindex="-1" aria-labelledby="modalPoliticaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title pt-sans-bold" id="modalPoliticaLabel">Política de privacidad</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body pt-sans-regular">
+                    <p>Tu privacidad es importante para nosotros. En Datatist, nos comprometemos a proteger tu información personal y garantizar la seguridad de tus datos.</p>
+                    <h6>1. Recopilación de datos</h6>
+                    <p>Recopilamos información como nombre y correo electrónico cuando utilizas nuestros servicios.</p>
+                    <h6>2. Uso de la información</h6>
+                    <p>Usamos tus datos para mejorar la experiencia del usuario y ofrecer contenido relevante.</p>
+                    <h6>3. Seguridad</h6>
+                    <p>Implementamos medidas de seguridad para proteger tu información contra accesos no autorizados.</p>
+                    <p class="text-muted"><small>Última actualización: marzo 2025</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+</html>
